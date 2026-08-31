@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "id": "diamond-pick",
+  "kind": "heirloom",
+  "game_tag": {
+    "name": "DiamondPick",
+    "value": 594
+  },
+  "display": {
+    "name": "Diamond Pick",
+    "description": "[Quarry] create [Ore] instead of [Rocks]",
+    "name_key": "DiamondPick.Name",
+    "description_key": "DiamondPick.Description"
+  },
+  "classification": {
+    "categories": [
+      "heirloom"
+    ],
+    "rarity": "common"
+  },
+  "mechanics": {
+    "categories": [
+      "heirloom"
+    ],
+    "rarity": "common",
+    "buy_price": 5,
+    "behavior_tag": "diamond-pick",
+    "target_tags": [],
+    "target_categories": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "valid_triggers": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "activation_chance": 1,
+    "cooldown": -1,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "none",
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/heirlooms/diamond-pick/icon.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 110,
+        "y": 135,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/heirlooms/diamond-pick/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": "industrial",
+        "rarity": null,
+        "background_rgba": [
+          109,
+          109,
+          90,
+          255
+        ],
+        "label_rgba": [
+          45,
+          45,
+          42,
+          255
+        ],
+        "border_rgba": [
+          32,
+          46,
+          55,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/heirlooms/diamond-pick/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 436,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

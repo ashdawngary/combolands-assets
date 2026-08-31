@@ -1,0 +1,104 @@
+# Herb Garden
+
+Triggers when created:  
+1 and trigger all adjacent Healing excluding other Herb Garden  
+Passively: counts as Herbs
+
+## Basic information
+
+| Field | Value |
+| --- | --- |
+| Catalog ID | `herb-garden` |
+| Game tag | `HerbGarden` (113) |
+| Categories | Frontier, Farm, Healing |
+| Rarity | Common |
+| Draft group | Secondary |
+| Can be placed on | Grass |
+| Placement count | 1 |
+| Base score | 30 |
+| Can activate | Yes |
+
+## Visual references
+
+### Card preview
+
+![Herb Garden — Card preview](card-preview.png)
+
+### Information card
+
+![Herb Garden — Information card](info-card.png)
+
+[Catalog icon](icon.png) · [Transparent world sprite](ground.png)
+
+## Related catalog entries
+
+- Targets Category: **Healing**
+- Targets Entity: [Herbalist](../herbalist/)
+- Affected By Mechanic: Building Draft Rarity Weights
+- Affected By Mechanic: Rarity Milestone Multipliers
+- Affected By Mechanic: Building Draft Roll Weight
+- Affected By Mechanic: Trigger Execution Priority
+
+## Additional reference assets
+
+<details open>
+<summary>Terrain context renders (1)</summary>
+
+<table>
+<tr>
+<td align="center" valign="bottom">
+<a href="context-grass.png"><img src="context-grass.png" alt="Herb Garden on grass" width="104"></a><br>
+<sub>Grass</sub>
+</td>
+</tr>
+</table>
+
+
+</details>
+
+<details open>
+<summary>Painted world sprites (7)</summary>
+
+<strong>Base sprite</strong>
+
+<table>
+<tr>
+<td align="center" valign="bottom">
+<a href="ground-paint-blue.png"><img src="ground-paint-blue.png" alt="Herb Garden - Base sprite, blue paint" width="52"></a><br>
+<sub>Blue</sub>
+</td>
+<td align="center" valign="bottom">
+<a href="ground-paint-dark.png"><img src="ground-paint-dark.png" alt="Herb Garden - Base sprite, dark paint" width="52"></a><br>
+<sub>Dark</sub>
+</td>
+<td align="center" valign="bottom">
+<a href="ground-paint-gold.png"><img src="ground-paint-gold.png" alt="Herb Garden - Base sprite, gold paint" width="52"></a><br>
+<sub>Gold</sub>
+</td>
+<td align="center" valign="bottom">
+<a href="ground-paint-green.png"><img src="ground-paint-green.png" alt="Herb Garden - Base sprite, green paint" width="52"></a><br>
+<sub>Green</sub>
+</td>
+<td align="center" valign="bottom">
+<a href="ground-paint-purple.png"><img src="ground-paint-purple.png" alt="Herb Garden - Base sprite, purple paint" width="52"></a><br>
+<sub>Purple</sub>
+</td>
+<td align="center" valign="bottom">
+<a href="ground-paint-red.png"><img src="ground-paint-red.png" alt="Herb Garden - Base sprite, red paint" width="52"></a><br>
+<sub>Red</sub>
+</td>
+<td align="center" valign="bottom">
+<a href="ground-paint-white.png"><img src="ground-paint-white.png" alt="Herb Garden - Base sprite, white paint" width="52"></a><br>
+<sub>White</sub>
+</td>
+</tr>
+</table>
+
+
+</details>
+
+## Structured source
+
+- [Normalized building record](../../../data/entities/buildings/herb-garden.json)
+
+This page is generated from the normalized catalog record. Runtime-dependent values may vary during a game.

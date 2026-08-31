@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://combolands.local/schemas/entity.schema.json",
+  "title": "Combolands entity",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "kind",
+    "game_tag",
+    "display",
+    "classification",
+    "mechanics",
+    "relationships",
+    "assets",
+    "notes"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "minLength": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "kind": { "type": "string", "minLength": 1 },
+    "game_tag": {
+      "type": ["object", "null"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "value": { "type": ["integer", "null"] }
+      },
+      "required": ["name", "value"],
+      "additionalProperties": true
+    },
+    "display": {
+      "type": "object",
+      "required": ["name", "description", "name_key", "description_key"],
+      "properties": {
+        "name": { "type": ["string", "null"] },
+        "description": { "type": ["string", "null"] },
+        "name_key": { "type": ["string", "null"] },
+        "description_key": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "classification": {
+      "type": "object",
+      "properties": {
+        "rarity": { "enum": ["none", "common", "uncommon", "rare", "masterwork", "legendary"] },
+        "categories": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "draft_group": { "enum": ["default", "starter", "secondary", "advanced", "neutral"] },
+        "item_type": { "type": "object" }
+      },
+      "additionalProperties": true
+    },
+    "mechanics": {
+      "type": "object",
+      "properties": {
+        "mechanics_coverage": { "enum": ["exact", "partial", "unavailable"] }
+      },
+      "additionalProperties": true
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "properties": {
+          "type": { "type": "string", "minLength": 1 },
+          "target_id": { "type": ["string", "null"] },
+          "target_category": { "type": ["string", "null"] },
+          "target_mechanic_id": { "type": ["string", "null"] }
+        },
+        "additionalProperties": true
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["role", "path", "generated", "width", "height"],
+        "properties": {
+          "role": {
+            "enum": ["icon", "ground", "ground_variant", "animation_frame", "portrait", "card_preview", "info_card", "context_render", "painted_ground", "animated_context_render"]
+          },
+          "path": { "type": "string", "pattern": "\\.(png|gif)$" },
+          "generated": { "type": "boolean" },
+          "width": { "type": "integer", "minimum": 1 },
+          "height": { "type": "integer", "minimum": 1 },
+          "terrain": { "enum": ["grass", "sand"] },
+          "terrain_variant_index": { "type": "integer", "minimum": 0 },
+          "variant_index": { "type": "integer", "minimum": 0 },
+          "frame_count": { "type": "integer", "minimum": 2 },
+          "loop": { "type": "boolean" },
+          "animation_kind": { "enum": ["sprite_frames", "arcane_magic_particles"] },
+          "paint": { "type": "string", "minLength": 1 },
+          "paint_effect": { "enum": ["inner_outline", "greyscale"] },
+          "paint_color": {
+            "type": "array",
+            "items": { "type": "integer", "minimum": 0, "maximum": 255 },
+            "minItems": 4,
+            "maxItems": 4
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

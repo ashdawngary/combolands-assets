@@ -1,0 +1,344 @@
+{
+  "schema_version": "1.0.0",
+  "id": "pirate-ship",
+  "kind": "building",
+  "game_tag": {
+    "name": "PirateShip",
+    "value": 160
+  },
+  "display": {
+    "name": "Pirate Ship",
+    "description": "{Triggers every [Cooldown] weeks:} @[BaseScore] and {create} [ActivationCount] [TreasureChest] on a random tile [InRange]",
+    "name_key": "PirateShip.Name",
+    "description_key": "PirateShip.Description"
+  },
+  "classification": {
+    "categories": [
+      "rogues",
+      "ship"
+    ],
+    "rarity": "uncommon",
+    "draft_group": "neutral"
+  },
+  "mechanics": {
+    "categories": [
+      "rogues",
+      "ship"
+    ],
+    "can_be_placed_on": [
+      "ocean"
+    ],
+    "valid_triggers": [
+      "on-activate",
+      "on-end-of-turn",
+      "on-build"
+    ],
+    "rarity": "uncommon",
+    "range": 5,
+    "cooldown": 3,
+    "activation_count": 1,
+    "score": -100,
+    "behavior_tag": "pirate-ship",
+    "target_tags": [],
+    "target_categories": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "behavior_multiplier": 1,
+    "activation_chance": 1,
+    "buy_price": 77,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "none",
+    "placement_count": 1,
+    "range_placement_restriction": true,
+    "can_be_activated": true,
+    "times_can_trigger_per_week": 10,
+    "end_of_turn_execution_priority": 2,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "adjacency-and-range"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "building-draft-rarity-weights"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "rarity-milestone-multipliers"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "building-draft-roll-weight"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "ground",
+      "path": "assets/buildings/pirate-ship/ground.png",
+      "generated": false,
+      "width": 39,
+      "height": 26,
+      "rect": {
+        "x": 52,
+        "y": 20,
+        "width": 39,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "icon",
+      "path": "assets/buildings/pirate-ship/icon.png",
+      "generated": true,
+      "width": 11,
+      "height": 11,
+      "runtime_rect": {
+        "x": 68,
+        "y": 27,
+        "width": 11,
+        "height": 11
+      },
+      "icon_offset": {
+        "x": 15,
+        "y": 6
+      },
+      "corrupted": false,
+      "rect": {
+        "x": 52,
+        "y": 20,
+        "width": 39,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/pirate-ship/ground-paint-red.png",
+      "generated": true,
+      "width": 39,
+      "height": 26,
+      "paint": "red",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        231,
+        8,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 52,
+        "y": 20,
+        "width": 39,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/pirate-ship/ground-paint-gold.png",
+      "generated": true,
+      "width": 39,
+      "height": 26,
+      "paint": "gold",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        212,
+        151,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 52,
+        "y": 20,
+        "width": 39,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/pirate-ship/ground-paint-green.png",
+      "generated": true,
+      "width": 39,
+      "height": 26,
+      "paint": "green",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        164,
+        7,
+        255
+      ],
+      "rect": {
+        "x": 52,
+        "y": 20,
+        "width": 39,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/pirate-ship/ground-paint-blue.png",
+      "generated": true,
+      "width": 39,
+      "height": 26,
+      "paint": "blue",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        180,
+        255,
+        255
+      ],
+      "rect": {
+        "x": 52,
+        "y": 20,
+        "width": 39,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/pirate-ship/ground-paint-white.png",
+      "generated": true,
+      "width": 39,
+      "height": 26,
+      "paint": "white",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        229,
+        229,
+        229,
+        255
+      ],
+      "rect": {
+        "x": 52,
+        "y": 20,
+        "width": 39,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/pirate-ship/ground-paint-purple.png",
+      "generated": true,
+      "width": 39,
+      "height": 26,
+      "paint": "purple",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        202,
+        0,
+        189,
+        255
+      ],
+      "rect": {
+        "x": 52,
+        "y": 20,
+        "width": 39,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/pirate-ship/ground-paint-dark.png",
+      "generated": true,
+      "width": 39,
+      "height": 26,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 52,
+        "y": 20,
+        "width": 39,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/buildings/pirate-ship/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": "neutral",
+        "rarity": null,
+        "background_rgba": [
+          161,
+          161,
+          161,
+          255
+        ],
+        "label_rgba": [
+          128,
+          128,
+          128,
+          255
+        ],
+        "border_rgba": [
+          72,
+          72,
+          72,
+          255
+        ],
+        "frame_source": "BuildingButton.prefab/Panel3/rarity border"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/buildings/pirate-ship/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 516,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

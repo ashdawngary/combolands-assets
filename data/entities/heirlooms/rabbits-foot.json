@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0.0",
+  "id": "rabbits-foot",
+  "kind": "heirloom",
+  "game_tag": {
+    "name": "RabbitsFoot",
+    "value": 636
+  },
+  "display": {
+    "name": "Rabbit's Foot",
+    "description": "When a [TargetCategory1] building triggers, it has a [PercentageChance] chance to gain [MultParam] and a [Percentage2Chance] chance to gain [MoneyCount]",
+    "name_key": "RabbitsFoot.Name",
+    "description_key": "RabbitsFoot.Description"
+  },
+  "classification": {
+    "categories": [
+      "heirloom"
+    ],
+    "rarity": "uncommon"
+  },
+  "mechanics": {
+    "categories": [
+      "heirloom"
+    ],
+    "target_categories": [
+      "random-category1"
+    ],
+    "valid_triggers": [
+      "building-activation-occurred"
+    ],
+    "rarity": "uncommon",
+    "activation_chance": 0.25,
+    "buy_price": 7,
+    "multiplier": 0.1,
+    "money": 10,
+    "behavior_tag": "rabbits-foot",
+    "target_tags": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "cooldown": -1,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "none",
+    "secondary_activation_chance": 0.05,
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "targets_category",
+      "target_category": "random-category1"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/heirlooms/rabbits-foot/icon.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 44,
+        "y": 157,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/heirlooms/rabbits-foot/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/heirlooms/rabbits-foot/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 596,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

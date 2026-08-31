@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "building-draft-rarity-weights",
+  "kind": "weighted_choice",
+  "values": {
+    "common": 0.7,
+    "uncommon": 0.24,
+    "rare": 0.05,
+    "masterwork": 0.01
+  },
+  "formula": {
+    "operator": "weighted_choice",
+    "choices": [
+      {
+        "value": "common",
+        "weight": {
+          "operator": "constant",
+          "value": 0.7
+        }
+      },
+      {
+        "value": "uncommon",
+        "weight": {
+          "operator": "constant",
+          "value": 0.24
+        }
+      },
+      {
+        "value": "rare",
+        "weight": {
+          "operator": "constant",
+          "value": 0.05
+        }
+      },
+      {
+        "value": "masterwork",
+        "weight": {
+          "operator": "constant",
+          "value": 0.01
+        }
+      }
+    ]
+  },
+  "notes": [
+    "The default switch arm is excluded because it is not a draftable rarity."
+  ]
+}

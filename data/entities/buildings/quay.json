@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.0.0",
+  "id": "quay",
+  "kind": "building",
+  "game_tag": {
+    "name": "Quay",
+    "value": 157
+  },
+  "display": {
+    "name": "Quay",
+    "description": "Other [Adjacent] buildings are considered [Ship] @Must be created [Connected] to [Port] or [Crane] or another [Quay] @Does not connect diagonally",
+    "name_key": "Quay.Name",
+    "description_key": "Quay.Description"
+  },
+  "classification": {
+    "categories": [
+      "marine"
+    ],
+    "rarity": "uncommon",
+    "draft_group": "default"
+  },
+  "mechanics": {
+    "categories": [
+      "marine"
+    ],
+    "can_be_placed_on": [
+      "shore",
+      "ocean"
+    ],
+    "target_categories": [
+      "ship"
+    ],
+    "valid_triggers": [
+      "on-build"
+    ],
+    "rarity": "uncommon",
+    "placement_count": 3,
+    "can_be_activated": false,
+    "behavior_tag": "quay",
+    "target_tags": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "activation_chance": 1,
+    "buy_price": 77,
+    "cooldown": -1,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "adjacent",
+    "range_placement_restriction": true,
+    "times_can_trigger_per_week": 10,
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "targets_category",
+      "target_category": "ship"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "building-draft-rarity-weights"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "rarity-milestone-multipliers"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "building-draft-roll-weight"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "ground",
+      "path": "assets/buildings/quay/ground.png",
+      "generated": false,
+      "width": 12,
+      "height": 12,
+      "rect": {
+        "x": 60,
+        "y": 68,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "icon",
+      "path": "assets/buildings/quay/icon.png",
+      "generated": true,
+      "width": 12,
+      "height": 12,
+      "runtime_rect": {
+        "x": 60,
+        "y": 69,
+        "width": 12,
+        "height": 12
+      },
+      "icon_offset": {
+        "x": -1,
+        "y": 0
+      },
+      "corrupted": false,
+      "rect": {
+        "x": 60,
+        "y": 68,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/quay/ground-paint-red.png",
+      "generated": true,
+      "width": 12,
+      "height": 12,
+      "paint": "red",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        231,
+        8,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 60,
+        "y": 68,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/quay/ground-paint-gold.png",
+      "generated": true,
+      "width": 12,
+      "height": 12,
+      "paint": "gold",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        212,
+        151,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 60,
+        "y": 68,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/quay/ground-paint-green.png",
+      "generated": true,
+      "width": 12,
+      "height": 12,
+      "paint": "green",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        164,
+        7,
+        255
+      ],
+      "rect": {
+        "x": 60,
+        "y": 68,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/quay/ground-paint-blue.png",
+      "generated": true,
+      "width": 12,
+      "height": 12,
+      "paint": "blue",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        180,
+        255,
+        255
+      ],
+      "rect": {
+        "x": 60,
+        "y": 68,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/quay/ground-paint-white.png",
+      "generated": true,
+      "width": 12,
+      "height": 12,
+      "paint": "white",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        229,
+        229,
+        229,
+        255
+      ],
+      "rect": {
+        "x": 60,
+        "y": 68,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/quay/ground-paint-purple.png",
+      "generated": true,
+      "width": 12,
+      "height": 12,
+      "paint": "purple",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        202,
+        0,
+        189,
+        255
+      ],
+      "rect": {
+        "x": 60,
+        "y": 68,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/quay/ground-paint-dark.png",
+      "generated": true,
+      "width": 12,
+      "height": 12,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 60,
+        "y": 68,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/buildings/quay/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": "marine",
+        "rarity": null,
+        "background_rgba": [
+          166,
+          204,
+          221,
+          255
+        ],
+        "label_rgba": [
+          77,
+          152,
+          185,
+          255
+        ],
+        "border_rgba": [
+          60,
+          94,
+          139,
+          255
+        ],
+        "frame_source": "BuildingButton.prefab/Panel3/rarity border"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/buildings/quay/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 548,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

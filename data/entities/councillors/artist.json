@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "artist",
+  "kind": "councillor",
+  "game_tag": {
+    "name": "FavourArtist",
+    "value": 809
+  },
+  "display": {
+    "name": "Artist",
+    "description": "The inspired [Artist] joins the council. She provides paints and benefits [Consumable]",
+    "name_key": "CharacterArtistData.Name",
+    "description_key": "CharacterArtistData.Description"
+  },
+  "classification": {
+    "councillor": {
+      "name": "Artist",
+      "value": 8
+    }
+  },
+  "mechanics": {},
+  "relationships": [],
+  "assets": [
+    {
+      "role": "portrait",
+      "path": "assets/councillors/artist/portrait.png",
+      "generated": false,
+      "width": 32,
+      "height": 50,
+      "rect": {
+        "x": 160,
+        "y": 104,
+        "width": 32,
+        "height": 50
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5202784
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/councillors/artist/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/councillors/artist/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 436,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

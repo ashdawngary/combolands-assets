@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "antiquarian",
+  "kind": "councillor",
+  "game_tag": {
+    "name": "FavourAntiquarian",
+    "value": 814
+  },
+  "display": {
+    "name": "Antiquarian",
+    "description": "The discerning [Antiquarian] joins the council. She sources [Heirlooms]  [Gem] and [Tome]",
+    "name_key": "CharacterAntiquarianData.Name",
+    "description_key": "CharacterAntiquarianData.Description"
+  },
+  "classification": {
+    "councillor": {
+      "name": "Antiquarian",
+      "value": 13
+    }
+  },
+  "mechanics": {},
+  "relationships": [],
+  "assets": [
+    {
+      "role": "portrait",
+      "path": "assets/councillors/antiquarian/portrait.png",
+      "generated": false,
+      "width": 32,
+      "height": 51,
+      "rect": {
+        "x": 192,
+        "y": 52,
+        "width": 32,
+        "height": 51
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.510566
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/councillors/antiquarian/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/councillors/antiquarian/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 436,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

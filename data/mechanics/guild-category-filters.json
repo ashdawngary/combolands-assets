@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "id": "guild-category-filters",
+  "kind": "eligibility_filters",
+  "interpretation": "exact",
+  "rules": {
+    "guild": "hamlet_or_later_and_major_guild_category_selected",
+    "neutral": "hamlet_or_later_and_any_minor_neutral_category_selected"
+  },
+  "notes": []
+}

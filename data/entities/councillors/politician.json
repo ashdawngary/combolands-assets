@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "politician",
+  "kind": "councillor",
+  "game_tag": {
+    "name": "FavourPolitician",
+    "value": 810
+  },
+  "display": {
+    "name": "Politician",
+    "description": "The astute [Politician] joins the council. His ploys benefit [Monument] and [Luxury] and even allow you to change guilds mid-run",
+    "name_key": "CharacterPoliticianData.Name",
+    "description_key": "CharacterPoliticianData.Description"
+  },
+  "classification": {
+    "councillor": {
+      "name": "Politician",
+      "value": 9
+    }
+  },
+  "mechanics": {},
+  "relationships": [],
+  "assets": [
+    {
+      "role": "portrait",
+      "path": "assets/councillors/politician/portrait.png",
+      "generated": false,
+      "width": 31,
+      "height": 51,
+      "rect": {
+        "x": 0,
+        "y": 52,
+        "width": 31,
+        "height": 51
+      },
+      "pivot": {
+        "x": 0.51554286,
+        "y": 0.510566
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/councillors/politician/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/councillors/politician/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 468,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

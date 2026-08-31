@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://combolands.local/schemas/mechanic.schema.json",
+  "title": "Combolands shared mechanic",
+  "type": "object",
+  "required": ["schema_version", "id", "kind", "notes"],
+  "properties": {
+    "schema_version": { "type": "string", "minLength": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "kind": {
+      "enum": [
+        "activation",
+        "conditional",
+        "eligibility_filters",
+        "formula",
+        "lookup",
+        "ordered_selection",
+        "ordering",
+        "spatial_rules",
+        "transformation_cycle",
+        "weighted_choice"
+      ]
+    },
+    "formula": { "$ref": "#/$defs/formula_node" },
+    "selection_formula": { "$ref": "#/$defs/formula_node" },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "formula_node": {
+      "type": "object",
+      "required": ["operator"],
+      "properties": {
+        "operator": { "enum": ["constant", "add", "multiply", "conditional", "lookup", "weighted_choice"] }
+      },
+      "additionalProperties": { "$ref": "#/$defs/formula_value" }
+    },
+    "formula_value": {
+      "oneOf": [
+        { "type": ["string", "number", "boolean", "null"] },
+        { "type": "array", "items": { "$ref": "#/$defs/formula_value" } },
+        {
+          "type": "object",
+          "properties": {
+            "operator": { "enum": ["constant", "add", "multiply", "conditional", "lookup", "weighted_choice"] }
+          },
+          "additionalProperties": { "$ref": "#/$defs/formula_value" }
+        }
+      ]
+    }
+  }
+}

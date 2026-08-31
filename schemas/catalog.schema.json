@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://combolands.local/schemas/catalog.schema.json",
+  "title": "Combolands consumer catalog manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "counts",
+    "entities",
+    "mechanics",
+    "enums",
+    "assets",
+    "schemas",
+    "primers",
+    "primer"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "minLength": 1 },
+    "counts": {
+      "type": "object",
+      "required": ["entities", "mechanics", "enums", "assets", "schemas", "primers"],
+      "properties": {
+        "entities": { "type": "integer", "minimum": 0 },
+        "mechanics": { "type": "integer", "minimum": 0 },
+        "enums": { "type": "integer", "minimum": 1 },
+        "assets": { "type": "integer", "minimum": 0 },
+        "schemas": { "type": "integer", "minimum": 1 },
+        "primers": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "entities": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/index_entry" } },
+    "mechanics": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/index_entry" } },
+    "enums": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "path"],
+        "properties": {
+          "id": { "const": "managed-enums" },
+          "path": { "const": "data/enums.json" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "assets": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/asset_entry" } },
+    "schemas": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/public_path" } },
+    "primers": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/path_entry" } },
+    "primer": { "$ref": "#/$defs/public_path" }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "public_path": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?![A-Za-z]:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+    },
+    "index_entry": {
+      "type": "object",
+      "required": ["id", "path"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "path": { "$ref": "#/$defs/public_path" }
+      },
+      "additionalProperties": false
+    },
+    "path_entry": {
+      "type": "object",
+      "required": ["path"],
+      "properties": { "path": { "$ref": "#/$defs/public_path" } },
+      "additionalProperties": false
+    },
+    "asset_entry": {
+      "type": "object",
+      "required": ["entity_id", "role", "path", "generated", "width", "height"],
+      "properties": {
+        "entity_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "role": { "enum": ["icon", "ground", "ground_variant", "animation_frame", "portrait", "card_preview", "info_card", "context_render", "painted_ground", "animated_context_render"] },
+        "path": {
+          "allOf": [
+            { "$ref": "#/$defs/public_path" },
+            { "pattern": "\\.(png|gif)$" }
+          ]
+        },
+        "generated": { "type": "boolean" },
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    }
+  }
+}

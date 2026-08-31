@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "spell-gain-gold-sell-value",
+  "kind": "consumable",
+  "game_tag": {
+    "name": "SpellGainGoldSellValue",
+    "value": 907
+  },
+  "display": {
+    "name": "Lustrous Solution",
+    "description": "Gain gold equal to the sell value of all equipped [Heirloom] [TotalHeirloomSellValueSum] @Max +50 [Gold]",
+    "name_key": "GainGoldSellValue.Name",
+    "description_key": "GainGoldSellValue.Description"
+  },
+  "classification": {
+    "item_type": {
+      "name": "Potion",
+      "value": 5
+    }
+  },
+  "mechanics": {},
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "consumable-roll-multipliers"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/consumables/spell-gain-gold-sell-value/icon.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 55,
+        "y": 58,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/consumables/spell-gain-gold-sell-value/card-preview.png",
+      "generated": true,
+      "width": 120,
+      "height": 136,
+      "style": {
+        "item_type": "potion",
+        "frame_source": "ShopItemSpell/ShopBGSpell"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/consumables/spell-gain-gold-sell-value/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 532,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

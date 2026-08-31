@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "id": "builders-ladder",
+  "kind": "heirloom",
+  "game_tag": {
+    "name": "BuildersLadder",
+    "value": 620
+  },
+  "display": {
+    "name": "Builder's Ladder",
+    "description": "Whenever you use a [BuildingUpgrade] also give the target building [MultParam]",
+    "name_key": "BuildersLadder.Name",
+    "description_key": "BuildersLadder.Description"
+  },
+  "classification": {
+    "categories": [
+      "heirloom"
+    ],
+    "rarity": "uncommon"
+  },
+  "mechanics": {
+    "categories": [
+      "heirloom"
+    ],
+    "rarity": "uncommon",
+    "buy_price": 6,
+    "multiplier": 0.25,
+    "behavior_tag": "builders-ladder",
+    "target_tags": [],
+    "target_categories": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "valid_triggers": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "activation_chance": 1,
+    "cooldown": -1,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "none",
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/heirlooms/builders-ladder/icon.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 198,
+        "y": 157,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/heirlooms/builders-ladder/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": "civic",
+        "rarity": null,
+        "background_rgba": [
+          143,
+          179,
+          217,
+          255
+        ],
+        "label_rgba": [
+          11,
+          79,
+          152,
+          255
+        ],
+        "border_rgba": [
+          37,
+          58,
+          94,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/heirlooms/builders-ladder/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 436,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

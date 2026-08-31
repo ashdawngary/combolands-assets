@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "id": "spare-lumber",
+  "kind": "heirloom",
+  "game_tag": {
+    "name": "SpareLumber",
+    "value": 510
+  },
+  "display": {
+    "name": "SpareLumber",
+    "description": null,
+    "name_key": null,
+    "description_key": null
+  },
+  "classification": {
+    "categories": [],
+    "rarity": "none"
+  },
+  "mechanics": {
+    "valid_triggers": [
+      "building-transformation-occurred"
+    ],
+    "activation_count": 2,
+    "behavior_tag": "spare-lumber",
+    "target_tags": [],
+    "target_categories": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "behavior_multiplier": 1,
+    "activation_chance": 1,
+    "buy_price": 77,
+    "categories": [],
+    "cooldown": -1,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "none",
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/heirlooms/spare-lumber/icon.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 165,
+        "y": 36,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/heirlooms/spare-lumber/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/heirlooms/spare-lumber/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 436,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": [
+    "Localized name is unavailable; the displayed fallback name is used.",
+    "Localized description is unavailable."
+  ]
+}

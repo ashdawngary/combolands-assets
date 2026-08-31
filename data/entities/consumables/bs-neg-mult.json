@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "bs-neg-mult",
+  "kind": "consumable",
+  "game_tag": {
+    "name": "BsNegMult",
+    "value": 719
+  },
+  "display": {
+    "name": "Reduced Mult",
+    "description": "Give a building [MultParam] when created",
+    "name_key": "NegChangeMult.Name",
+    "description_key": "NegChangeMult.Description"
+  },
+  "classification": {
+    "item_type": {
+      "name": "BuildingUpgrade",
+      "value": 3
+    }
+  },
+  "mechanics": {},
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "consumable-roll-multipliers"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/consumables/bs-neg-mult/icon.png",
+      "generated": false,
+      "width": 1,
+      "height": 1,
+      "rect": {
+        "x": 0,
+        "y": 269,
+        "width": 1,
+        "height": 1
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/consumables/bs-neg-mult/card-preview.png",
+      "generated": true,
+      "width": 120,
+      "height": 136,
+      "style": {
+        "item_type": "building_upgrade",
+        "frame_source": "ShopItemBuildingSupply/ShopBGBuildingSupply"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/consumables/bs-neg-mult/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 500,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

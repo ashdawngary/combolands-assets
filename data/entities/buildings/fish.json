@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0.0",
+  "id": "fish",
+  "kind": "building",
+  "game_tag": {
+    "name": "Fish",
+    "value": 6
+  },
+  "display": {
+    "name": "Fish",
+    "description": null,
+    "name_key": "Fish.Name",
+    "description_key": null
+  },
+  "classification": {
+    "categories": [
+      "none",
+      "nature",
+      "fishing"
+    ],
+    "rarity": "none",
+    "draft_group": "default"
+  },
+  "mechanics": {
+    "categories": [
+      "none",
+      "nature",
+      "fishing"
+    ],
+    "can_be_placed_on": [
+      "ocean"
+    ],
+    "can_be_activated": false,
+    "behavior_tag": "fish",
+    "target_tags": [],
+    "target_categories": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "valid_triggers": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "activation_chance": 1,
+    "buy_price": 77,
+    "cooldown": -1,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "none",
+    "placement_count": 1,
+    "range_placement_restriction": true,
+    "times_can_trigger_per_week": 10,
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "ground",
+      "path": "assets/buildings/fish/ground.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 157,
+        "y": 210,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "icon",
+      "path": "assets/buildings/fish/icon.png",
+      "generated": true,
+      "width": 11,
+      "height": 11,
+      "runtime_rect": {
+        "x": 158,
+        "y": 211,
+        "width": 11,
+        "height": 11
+      },
+      "icon_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "corrupted": false,
+      "rect": {
+        "x": 157,
+        "y": 210,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/fish/ground-paint-dark.png",
+      "generated": true,
+      "width": 11,
+      "height": 11,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 157,
+        "y": 210,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/buildings/fish/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ],
+        "frame_source": "BuildingButton.prefab/Panel3/rarity border"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/buildings/fish/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 484,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": [
+    "Localized description is unavailable."
+  ]
+}

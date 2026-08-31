@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "id": "abacus",
+  "kind": "heirloom",
+  "game_tag": {
+    "name": "Abacus",
+    "value": 542
+  },
+  "display": {
+    "name": "Sky Blue Diamond",
+    "description": "Every time a building or heirloom earns [Gold] gain [CategoryScoreLuxury] for each [Luxury] on the map",
+    "name_key": "Abacus.Name",
+    "description_key": "Abacus.Description"
+  },
+  "classification": {
+    "categories": [
+      "heirloom",
+      "gem"
+    ],
+    "rarity": "uncommon"
+  },
+  "mechanics": {
+    "categories": [
+      "heirloom",
+      "gem"
+    ],
+    "target_categories": [
+      "luxury"
+    ],
+    "valid_triggers": [
+      "money-earned"
+    ],
+    "rarity": "uncommon",
+    "buy_price": 6,
+    "behavior_tag": "abacus",
+    "target_tags": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "activation_chance": 1,
+    "cooldown": -1,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "none",
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "targets_category",
+      "target_category": "luxury"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/heirlooms/abacus/icon.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 11,
+        "y": 146,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/heirlooms/abacus/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": "commercial",
+        "rarity": null,
+        "background_rgba": [
+          207,
+          186,
+          138,
+          255
+        ],
+        "label_rgba": [
+          204,
+          147,
+          18,
+          255
+        ],
+        "border_rgba": [
+          174,
+          106,
+          34,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/heirlooms/abacus/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 484,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0.0",
+  "id": "kelp-field",
+  "kind": "building",
+  "game_tag": {
+    "name": "KelpField",
+    "value": 154
+  },
+  "display": {
+    "name": "Kelp Field",
+    "description": "{Triggers when removed:} [RerollCount]",
+    "name_key": "KelpField.Name",
+    "description_key": "KelpField.Description"
+  },
+  "classification": {
+    "categories": [
+      "marine",
+      "nature"
+    ],
+    "rarity": "common",
+    "draft_group": "default"
+  },
+  "mechanics": {
+    "categories": [
+      "marine",
+      "nature"
+    ],
+    "can_be_placed_on": [
+      "ocean"
+    ],
+    "valid_triggers": [
+      "on-activate",
+      "on-remove"
+    ],
+    "rarity": "common",
+    "placement_count": 3,
+    "rerolls": 1,
+    "behavior_tag": "kelp-field",
+    "target_tags": [],
+    "target_categories": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "activation_chance": 1,
+    "buy_price": 77,
+    "cooldown": -1,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "none",
+    "range_placement_restriction": true,
+    "can_be_activated": true,
+    "times_can_trigger_per_week": 10,
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "building-draft-rarity-weights"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "rarity-milestone-multipliers"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "building-draft-roll-weight"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "ground",
+      "path": "assets/buildings/kelp-field/ground.png",
+      "generated": false,
+      "width": 13,
+      "height": 26,
+      "rect": {
+        "x": 221,
+        "y": 98,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "icon",
+      "path": "assets/buildings/kelp-field/icon.png",
+      "generated": true,
+      "width": 11,
+      "height": 11,
+      "runtime_rect": {
+        "x": 222,
+        "y": 99,
+        "width": 11,
+        "height": 11
+      },
+      "icon_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "corrupted": false,
+      "rect": {
+        "x": 221,
+        "y": 98,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/kelp-field/ground-paint-dark.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 221,
+        "y": 98,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/buildings/kelp-field/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": "marine",
+        "rarity": null,
+        "background_rgba": [
+          166,
+          204,
+          221,
+          255
+        ],
+        "label_rgba": [
+          77,
+          152,
+          185,
+          255
+        ],
+        "border_rgba": [
+          60,
+          94,
+          139,
+          255
+        ],
+        "frame_source": "BuildingButton.prefab/Panel3/rarity border"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/buildings/kelp-field/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 484,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "sensei",
+  "kind": "councillor",
+  "game_tag": {
+    "name": "FavourSensei",
+    "value": 813
+  },
+  "display": {
+    "name": "Warrior",
+    "description": "The wise [Sensei] joins the council. His discipline supports both [Training] and [Woodworking]",
+    "name_key": "CharacterSenseiData.Name",
+    "description_key": "CharacterSenseiData.Description"
+  },
+  "classification": {
+    "councillor": {
+      "name": "Sensei",
+      "value": 12
+    }
+  },
+  "mechanics": {},
+  "relationships": [],
+  "assets": [
+    {
+      "role": "portrait",
+      "path": "assets/councillors/sensei/portrait.png",
+      "generated": false,
+      "width": 31,
+      "height": 52,
+      "rect": {
+        "x": 160,
+        "y": 52,
+        "width": 31,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5173995,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/councillors/sensei/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/councillors/sensei/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 436,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

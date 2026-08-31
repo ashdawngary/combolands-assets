@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "bs-spectral-paint",
+  "kind": "consumable",
+  "game_tag": {
+    "name": "BsSpectralPaint",
+    "value": 713
+  },
+  "display": {
+    "name": "Ghost Paint",
+    "description": "Permanently modify target building's affected category to one of your choice [BREAK]You may only select a new category that already exists on the map [BREAK]Buildings can only have 1 paint at a time",
+    "name_key": "SpectralPaint.Name",
+    "description_key": "SpectralPaint.Description"
+  },
+  "classification": {
+    "item_type": {
+      "name": "BuildingUpgrade",
+      "value": 3
+    }
+  },
+  "mechanics": {},
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "consumable-roll-multipliers"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/consumables/bs-spectral-paint/icon.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 110,
+        "y": 80,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/consumables/bs-spectral-paint/card-preview.png",
+      "generated": true,
+      "width": 120,
+      "height": 136,
+      "style": {
+        "item_type": "building_upgrade",
+        "frame_source": "ShopItemBuildingSupply/ShopBGBuildingSupply"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/consumables/bs-spectral-paint/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 668,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

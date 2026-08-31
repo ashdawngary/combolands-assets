@@ -1,0 +1,563 @@
+{
+  "schema_version": "1.0.0",
+  "id": "balloon",
+  "kind": "building",
+  "game_tag": {
+    "name": "Balloon",
+    "value": 243
+  },
+  "display": {
+    "name": "Balloon Trader",
+    "description": "{Passively:} other buildings [InRange] are considered [Luxury]",
+    "name_key": "Balloon.Name",
+    "description_key": "Balloon.Description"
+  },
+  "classification": {
+    "categories": [
+      "commercial",
+      "trader"
+    ],
+    "rarity": "rare",
+    "draft_group": "default"
+  },
+  "mechanics": {
+    "categories": [
+      "commercial",
+      "trader"
+    ],
+    "can_be_placed_on": [
+      "grass",
+      "sand"
+    ],
+    "target_categories": [
+      "luxury"
+    ],
+    "valid_triggers": [],
+    "rarity": "rare",
+    "range": 4,
+    "can_be_activated": false,
+    "behavior_tag": "balloon",
+    "target_tags": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "activation_chance": 1,
+    "buy_price": 77,
+    "cooldown": -1,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "in-range",
+    "placement_count": 1,
+    "range_placement_restriction": true,
+    "times_can_trigger_per_week": 10,
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "targets_category",
+      "target_category": "luxury"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "adjacency-and-range"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "building-draft-rarity-weights"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "rarity-milestone-multipliers"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "building-draft-roll-weight"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "ground",
+      "path": "assets/buildings/balloon/ground.png",
+      "generated": false,
+      "width": 13,
+      "height": 52,
+      "rect": {
+        "x": 286,
+        "y": 176,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      }
+    },
+    {
+      "role": "icon",
+      "path": "assets/buildings/balloon/icon.png",
+      "generated": true,
+      "width": 11,
+      "height": 11,
+      "runtime_rect": {
+        "x": 287,
+        "y": 203,
+        "width": 11,
+        "height": 11
+      },
+      "icon_offset": {
+        "x": 0,
+        "y": 26
+      },
+      "corrupted": false,
+      "rect": {
+        "x": 286,
+        "y": 176,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      }
+    },
+    {
+      "role": "animation_frame",
+      "path": "assets/buildings/balloon/animation-frame-000.png",
+      "generated": false,
+      "width": 13,
+      "height": 52,
+      "rect": {
+        "x": 364,
+        "y": 254,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "index": 0,
+      "duration": 0.4
+    },
+    {
+      "role": "animation_frame",
+      "path": "assets/buildings/balloon/animation-frame-001.png",
+      "generated": false,
+      "width": 13,
+      "height": 52,
+      "rect": {
+        "x": 377,
+        "y": 254,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "index": 1,
+      "duration": 0.4
+    },
+    {
+      "role": "animation_frame",
+      "path": "assets/buildings/balloon/animation-frame-002.png",
+      "generated": false,
+      "width": 13,
+      "height": 52,
+      "rect": {
+        "x": 390,
+        "y": 254,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "index": 2,
+      "duration": 0.4
+    },
+    {
+      "role": "animation_frame",
+      "path": "assets/buildings/balloon/animation-frame-003.png",
+      "generated": false,
+      "width": 13,
+      "height": 52,
+      "rect": {
+        "x": 403,
+        "y": 254,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "index": 3,
+      "duration": 0.4
+    },
+    {
+      "role": "animation_frame",
+      "path": "assets/buildings/balloon/animation-frame-004.png",
+      "generated": false,
+      "width": 13,
+      "height": 52,
+      "rect": {
+        "x": 416,
+        "y": 254,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "index": 4,
+      "duration": 0.4
+    },
+    {
+      "role": "animation_frame",
+      "path": "assets/buildings/balloon/animation-frame-005.png",
+      "generated": false,
+      "width": 13,
+      "height": 52,
+      "rect": {
+        "x": 429,
+        "y": 254,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "index": 5,
+      "duration": 0.4
+    },
+    {
+      "role": "context_render",
+      "path": "assets/buildings/balloon/context-grass.png",
+      "generated": true,
+      "width": 52,
+      "height": 208,
+      "terrain": "grass",
+      "terrain_variant_index": 7,
+      "terrain_context": "homogeneous",
+      "map_coordinate": [
+        0,
+        0
+      ],
+      "nature_offset_px": [
+        0,
+        0
+      ],
+      "theme": "normal",
+      "global_light": "neutral_white",
+      "scale": 4,
+      "pixels_per_unit": 12,
+      "rect": {
+        "x": 286,
+        "y": 176,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "terrain_rect": {
+        "x": 132,
+        "y": 246,
+        "width": 12,
+        "height": 12
+      },
+      "terrain_pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "context_render",
+      "path": "assets/buildings/balloon/context-sand.png",
+      "generated": true,
+      "width": 52,
+      "height": 208,
+      "terrain": "sand",
+      "terrain_variant_index": 5,
+      "terrain_context": "homogeneous",
+      "map_coordinate": [
+        0,
+        0
+      ],
+      "nature_offset_px": [
+        0,
+        0
+      ],
+      "theme": "normal",
+      "global_light": "neutral_white",
+      "scale": 4,
+      "pixels_per_unit": 12,
+      "rect": {
+        "x": 286,
+        "y": 176,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      },
+      "terrain_rect": {
+        "x": 84,
+        "y": 222,
+        "width": 12,
+        "height": 12
+      },
+      "terrain_pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/balloon/ground-paint-red.png",
+      "generated": true,
+      "width": 13,
+      "height": 52,
+      "paint": "red",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        231,
+        8,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 286,
+        "y": 176,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/balloon/ground-paint-gold.png",
+      "generated": true,
+      "width": 13,
+      "height": 52,
+      "paint": "gold",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        212,
+        151,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 286,
+        "y": 176,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/balloon/ground-paint-green.png",
+      "generated": true,
+      "width": 13,
+      "height": 52,
+      "paint": "green",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        164,
+        7,
+        255
+      ],
+      "rect": {
+        "x": 286,
+        "y": 176,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/balloon/ground-paint-blue.png",
+      "generated": true,
+      "width": 13,
+      "height": 52,
+      "paint": "blue",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        180,
+        255,
+        255
+      ],
+      "rect": {
+        "x": 286,
+        "y": 176,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/balloon/ground-paint-white.png",
+      "generated": true,
+      "width": 13,
+      "height": 52,
+      "paint": "white",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        229,
+        229,
+        229,
+        255
+      ],
+      "rect": {
+        "x": 286,
+        "y": 176,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/balloon/ground-paint-purple.png",
+      "generated": true,
+      "width": 13,
+      "height": 52,
+      "paint": "purple",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        202,
+        0,
+        189,
+        255
+      ],
+      "rect": {
+        "x": 286,
+        "y": 176,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/balloon/ground-paint-dark.png",
+      "generated": true,
+      "width": 13,
+      "height": 52,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 286,
+        "y": 176,
+        "width": 13,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.125
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/buildings/balloon/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": "commercial",
+        "rarity": null,
+        "background_rgba": [
+          207,
+          186,
+          138,
+          255
+        ],
+        "label_rgba": [
+          204,
+          147,
+          18,
+          255
+        ],
+        "border_rgba": [
+          174,
+          106,
+          34,
+          255
+        ],
+        "frame_source": "BuildingButton.prefab/Panel3/rarity border"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/buildings/balloon/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 484,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "animated_context_render",
+      "path": "assets/buildings/balloon/animated-grass.gif",
+      "generated": true,
+      "width": 52,
+      "height": 208,
+      "terrain": "grass",
+      "frame_count": 6,
+      "loop": true,
+      "animation_kind": "sprite_frames",
+      "durations_ms": [
+        400,
+        400,
+        400,
+        400,
+        400,
+        400
+      ]
+    }
+  ],
+  "notes": []
+}

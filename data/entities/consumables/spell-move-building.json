@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "spell-move-building",
+  "kind": "consumable",
+  "game_tag": {
+    "name": "SpellMoveBuilding",
+    "value": 906
+  },
+  "display": {
+    "name": "Mobility Draught",
+    "description": "Select a building, then move it to a valid empty tile",
+    "name_key": "MoveBuilding.Name",
+    "description_key": "MoveBuilding.Description"
+  },
+  "classification": {
+    "item_type": {
+      "name": "Potion",
+      "value": 5
+    }
+  },
+  "mechanics": {},
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "consumable-roll-multipliers"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/consumables/spell-move-building/icon.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 88,
+        "y": 58,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/consumables/spell-move-building/card-preview.png",
+      "generated": true,
+      "width": 120,
+      "height": 136,
+      "style": {
+        "item_type": "potion",
+        "frame_source": "ShopItemSpell/ShopBGSpell"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/consumables/spell-move-building/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 500,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

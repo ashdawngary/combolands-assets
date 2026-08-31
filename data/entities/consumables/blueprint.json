@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "id": "blueprint",
+  "kind": "consumable",
+  "game_tag": null,
+  "display": {
+    "name": "Blueprint",
+    "description": null,
+    "name_key": null,
+    "description_key": null
+  },
+  "classification": {
+    "item_type": {
+      "name": "Blueprint",
+      "value": 1
+    }
+  },
+  "mechanics": {},
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "consumable-roll-multipliers"
+    }
+  ],
+  "assets": [
+    {
+      "role": "info_card",
+      "path": "assets/consumables/blueprint/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 500,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": [
+    "Localized name is unavailable; the displayed fallback name is used.",
+    "Localized description is unavailable.",
+    "Tag value 1000 has no named catalog entry."
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "inventor",
+  "kind": "councillor",
+  "game_tag": {
+    "name": "FavourInventor",
+    "value": 815
+  },
+  "display": {
+    "name": "Inventor",
+    "description": "The chaotic [Inventor] joins the council. His experiments benefit [Engineering] and [Provisioner]",
+    "name_key": "CharacterInventorData.Name",
+    "description_key": "CharacterInventorData.Description"
+  },
+  "classification": {
+    "councillor": {
+      "name": "Inventor",
+      "value": 14
+    }
+  },
+  "mechanics": {},
+  "relationships": [],
+  "assets": [
+    {
+      "role": "portrait",
+      "path": "assets/councillors/inventor/portrait.png",
+      "generated": false,
+      "width": 31,
+      "height": 52,
+      "rect": {
+        "x": 193,
+        "y": 104,
+        "width": 31,
+        "height": 52
+      },
+      "pivot": {
+        "x": 0.48379117,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/councillors/inventor/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/councillors/inventor/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 436,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

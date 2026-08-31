@@ -1,0 +1,1017 @@
+{
+  "schema_version": "1.0.0",
+  "id": "apple-orchard",
+  "kind": "building",
+  "game_tag": {
+    "name": "AppleOrchard",
+    "value": 117
+  },
+  "display": {
+    "name": "Fruit Orchard",
+    "description": "{Grows} (transforms) in [Cooldown] weeks and then {triggers:} [BaseScore] [BREAK]{Passively:} has [MultParam] if [Adjacent] to [Apiary]",
+    "name_key": "AppleOrchard.Name",
+    "description_key": "AppleOrchard.Description"
+  },
+  "classification": {
+    "categories": [
+      "agricultural",
+      "crop",
+      "farm"
+    ],
+    "rarity": "common",
+    "draft_group": "secondary"
+  },
+  "mechanics": {
+    "categories": [
+      "agricultural",
+      "crop",
+      "farm"
+    ],
+    "can_be_placed_on": [
+      "grass"
+    ],
+    "valid_triggers": [
+      "on-activate",
+      "on-transformed-into"
+    ],
+    "rarity": "common",
+    "cooldown": 3,
+    "multiplier": 1,
+    "score": 70,
+    "range_placement_restriction": false,
+    "behavior_tag": "apple-orchard",
+    "target_tags": [],
+    "target_categories": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "activation_chance": 1,
+    "buy_price": 77,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "self-only",
+    "placement_count": 1,
+    "can_be_activated": true,
+    "times_can_trigger_per_week": 10,
+    "irrigated_cooldown": 1,
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "affected_by_category",
+      "target_category": "irrigator"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "crop-growth"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "building-draft-rarity-weights"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "rarity-milestone-multipliers"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "building-draft-roll-weight"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    },
+    {
+      "type": "alternate_placed_type",
+      "target_id": "apple-orchard-empty"
+    }
+  ],
+  "assets": [
+    {
+      "role": "ground",
+      "path": "assets/buildings/apple-orchard/ground.png",
+      "generated": false,
+      "width": 13,
+      "height": 26,
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "icon",
+      "path": "assets/buildings/apple-orchard/icon.png",
+      "generated": true,
+      "width": 11,
+      "height": 11,
+      "runtime_rect": {
+        "x": 40,
+        "y": 362,
+        "width": 11,
+        "height": 11
+      },
+      "icon_offset": {
+        "x": 0,
+        "y": 3
+      },
+      "corrupted": false,
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "ground_variant",
+      "path": "assets/buildings/apple-orchard/ground-variant-000.png",
+      "generated": false,
+      "width": 13,
+      "height": 26,
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 0
+    },
+    {
+      "role": "ground_variant",
+      "path": "assets/buildings/apple-orchard/ground-variant-001.png",
+      "generated": false,
+      "width": 13,
+      "height": 26,
+      "rect": {
+        "x": 13,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 1
+    },
+    {
+      "role": "ground_variant",
+      "path": "assets/buildings/apple-orchard/ground-variant-002.png",
+      "generated": false,
+      "width": 13,
+      "height": 26,
+      "rect": {
+        "x": 26,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 2
+    },
+    {
+      "role": "context_render",
+      "path": "assets/buildings/apple-orchard/context-grass.png",
+      "generated": true,
+      "width": 52,
+      "height": 104,
+      "terrain": "grass",
+      "terrain_variant_index": 7,
+      "terrain_context": "homogeneous",
+      "map_coordinate": [
+        0,
+        0
+      ],
+      "nature_offset_px": [
+        0,
+        0
+      ],
+      "theme": "normal",
+      "global_light": "neutral_white",
+      "scale": 4,
+      "pixels_per_unit": 12,
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "terrain_rect": {
+        "x": 132,
+        "y": 246,
+        "width": 12,
+        "height": 12
+      },
+      "terrain_pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-paint-red.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "red",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        231,
+        8,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-paint-gold.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "gold",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        212,
+        151,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-paint-green.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "green",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        164,
+        7,
+        255
+      ],
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-paint-blue.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "blue",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        180,
+        255,
+        255
+      ],
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-paint-white.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "white",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        229,
+        229,
+        229,
+        255
+      ],
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-paint-purple.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "purple",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        202,
+        0,
+        189,
+        255
+      ],
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-paint-dark.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-000-paint-red.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "red",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        231,
+        8,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 0,
+      "variant_index": 0
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-000-paint-gold.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "gold",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        212,
+        151,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 0,
+      "variant_index": 0
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-000-paint-green.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "green",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        164,
+        7,
+        255
+      ],
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 0,
+      "variant_index": 0
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-000-paint-blue.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "blue",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        180,
+        255,
+        255
+      ],
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 0,
+      "variant_index": 0
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-000-paint-white.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "white",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        229,
+        229,
+        229,
+        255
+      ],
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 0,
+      "variant_index": 0
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-000-paint-purple.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "purple",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        202,
+        0,
+        189,
+        255
+      ],
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 0,
+      "variant_index": 0
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-000-paint-dark.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 39,
+        "y": 358,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 0,
+      "variant_index": 0
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-001-paint-red.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "red",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        231,
+        8,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 13,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 1,
+      "variant_index": 1
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-001-paint-gold.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "gold",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        212,
+        151,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 13,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 1,
+      "variant_index": 1
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-001-paint-green.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "green",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        164,
+        7,
+        255
+      ],
+      "rect": {
+        "x": 13,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 1,
+      "variant_index": 1
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-001-paint-blue.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "blue",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        180,
+        255,
+        255
+      ],
+      "rect": {
+        "x": 13,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 1,
+      "variant_index": 1
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-001-paint-white.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "white",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        229,
+        229,
+        229,
+        255
+      ],
+      "rect": {
+        "x": 13,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 1,
+      "variant_index": 1
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-001-paint-purple.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "purple",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        202,
+        0,
+        189,
+        255
+      ],
+      "rect": {
+        "x": 13,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 1,
+      "variant_index": 1
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-001-paint-dark.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 13,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 1,
+      "variant_index": 1
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-002-paint-red.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "red",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        231,
+        8,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 26,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 2,
+      "variant_index": 2
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-002-paint-gold.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "gold",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        212,
+        151,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 26,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 2,
+      "variant_index": 2
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-002-paint-green.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "green",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        164,
+        7,
+        255
+      ],
+      "rect": {
+        "x": 26,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 2,
+      "variant_index": 2
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-002-paint-blue.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "blue",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        180,
+        255,
+        255
+      ],
+      "rect": {
+        "x": 26,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 2,
+      "variant_index": 2
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-002-paint-white.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "white",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        229,
+        229,
+        229,
+        255
+      ],
+      "rect": {
+        "x": 26,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 2,
+      "variant_index": 2
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-002-paint-purple.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "purple",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        202,
+        0,
+        189,
+        255
+      ],
+      "rect": {
+        "x": 26,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 2,
+      "variant_index": 2
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/apple-orchard/ground-variant-002-paint-dark.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 26,
+        "y": 332,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "index": 2,
+      "variant_index": 2
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/buildings/apple-orchard/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": "agricultural",
+        "rarity": null,
+        "background_rgba": [
+          125,
+          161,
+          132,
+          255
+        ],
+        "label_rgba": [
+          0,
+          97,
+          17,
+          255
+        ],
+        "border_rgba": [
+          37,
+          86,
+          46,
+          255
+        ],
+        "frame_source": "BuildingButton.prefab/Panel3/rarity border"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/buildings/apple-orchard/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 524,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

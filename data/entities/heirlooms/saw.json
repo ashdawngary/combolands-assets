@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0.0",
+  "id": "saw",
+  "kind": "heirloom",
+  "game_tag": {
+    "name": "Saw",
+    "value": 583
+  },
+  "display": {
+    "name": "Woodsaw",
+    "description": "Gain a [Palisade] [Blueprint] whenever [Trees] is removed (must have space) [BREAK][Blueprint] gained by [Saw] only have 1 charge",
+    "name_key": "Saw.Name",
+    "description_key": "Saw.Description"
+  },
+  "classification": {
+    "categories": [
+      "heirloom"
+    ],
+    "rarity": "uncommon"
+  },
+  "mechanics": {
+    "categories": [
+      "heirloom"
+    ],
+    "valid_triggers": [
+      "building-removal-occurred"
+    ],
+    "rarity": "uncommon",
+    "buy_price": 6,
+    "behavior_tag": "saw",
+    "target_tags": [],
+    "target_categories": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "activation_chance": 1,
+    "cooldown": -1,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "none",
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/heirlooms/saw/icon.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 165,
+        "y": 157,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/heirlooms/saw/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": "frontier",
+        "rarity": null,
+        "background_rgba": [
+          206,
+          169,
+          139,
+          255
+        ],
+        "label_rgba": [
+          166,
+          81,
+          10,
+          255
+        ],
+        "border_rgba": [
+          120,
+          59,
+          20,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/heirlooms/saw/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 516,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

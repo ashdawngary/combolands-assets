@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://combolands.local/schemas/enums.schema.json",
+  "title": "Combolands game enum catalog",
+  "type": "object",
+  "required": ["schema_version", "enums"],
+  "properties": {
+    "schema_version": { "type": "string", "minLength": 1 },
+    "enums": {
+      "type": "object",
+      "required": [
+        "GameTag",
+        "GamePieceCategory",
+        "Rarity",
+        "TriggerType",
+        "GameItemType",
+        "GameMechanicUnlock",
+        "CouncilCharacter",
+        "ProgressionRank"
+      ],
+      "properties": {
+        "GameTag": { "$ref": "#/$defs/enum_values" },
+        "GamePieceCategory": { "$ref": "#/$defs/enum_values" },
+        "Rarity": { "$ref": "#/$defs/enum_values" },
+        "TriggerType": { "$ref": "#/$defs/enum_values" },
+        "GameItemType": { "$ref": "#/$defs/enum_values" },
+        "GameMechanicUnlock": { "$ref": "#/$defs/enum_values" },
+        "CouncilCharacter": { "$ref": "#/$defs/enum_values" },
+        "ProgressionRank": { "$ref": "#/$defs/enum_values" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "enum_values": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "type": "integer" }
+    }
+  }
+}

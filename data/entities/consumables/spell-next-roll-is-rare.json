@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "spell-next-roll-is-rare",
+  "kind": "consumable",
+  "game_tag": {
+    "name": "SpellNextRollIsRare",
+    "value": 916
+  },
+  "display": {
+    "name": "Clover Extract",
+    "description": "The next {building roll}, [Blueprint] satchel or [Heirloom] chest is guaranteed to only contain [Rare] or better. This effect persists through [Reroll] [BREAK]May only be used from {Quaint Village} onwards",
+    "name_key": "GuaranteeNextRollIsRare.Name",
+    "description_key": "GuaranteeNextRollIsRare.Description"
+  },
+  "classification": {
+    "item_type": {
+      "name": "Potion",
+      "value": 5
+    }
+  },
+  "mechanics": {},
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "consumable-roll-multipliers"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/consumables/spell-next-roll-is-rare/icon.png",
+      "generated": false,
+      "width": 13,
+      "height": 13,
+      "rect": {
+        "x": 131,
+        "y": 101,
+        "width": 13,
+        "height": 13
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/consumables/spell-next-roll-is-rare/card-preview.png",
+      "generated": true,
+      "width": 120,
+      "height": 136,
+      "style": {
+        "item_type": "potion",
+        "frame_source": "ShopItemSpell/ShopBGSpell"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/consumables/spell-next-roll-is-rare/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 660,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

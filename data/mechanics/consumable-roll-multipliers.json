@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0.0",
+  "id": "consumable-roll-multipliers",
+  "kind": "lookup",
+  "values": {
+    "blueprint": 1,
+    "bs-blue-paint": 1,
+    "bs-gold-paint": 1,
+    "bs-green-paint": 1,
+    "bs-neg-black-paint": 1,
+    "bs-neg-cooldown": 1,
+    "bs-neg-mult": 1,
+    "bs-neg-range": 1,
+    "bs-purple-paint": 1,
+    "bs-rainbow-paint": 1,
+    "bs-red-paint": 1,
+    "bs-spectral-paint": 1,
+    "bs-stat-mod-activation-count": 1,
+    "bs-stat-mod-cooldown": 1,
+    "bs-stat-mod-mult": 1,
+    "bs-stat-mod-range": 1,
+    "bs-white-paint": 1,
+    "favour-admiral": 1,
+    "favour-antiquarian": 1,
+    "favour-artist": 1,
+    "favour-druid": 1,
+    "favour-farmer": 1,
+    "favour-fool": 1,
+    "favour-inventor": 1,
+    "favour-merchant": 1,
+    "favour-politician": 1,
+    "favour-ranger": 1,
+    "favour-sensei": 1,
+    "favour-spymaster": 1,
+    "favour-tycoon": 1,
+    "favour-witch": 1,
+    "favour-wizard": 1,
+    "spell-create-random-building-supplies": 1,
+    "spell-create-random-heirloom": 1,
+    "spell-create-random-votes": 1,
+    "spell-gain-blueprint": 1,
+    "spell-gain-gold-sell-value": 1,
+    "spell-gain-heirloom-slot": 1,
+    "spell-move-building": 1,
+    "spell-next-roll-is-rare": 1,
+    "spell-place-anywhere": 1,
+    "spell-remove-building-gain-vote": 1,
+    "spell-transform-building-into-copy": 1,
+    "spell-trigger": 1
+  },
+  "pool_weight": 1.0,
+  "replacement": false,
+  "uses_consumable_data_roll_chance": false,
+  "formula": {
+    "operator": "constant",
+    "value": 1.0
+  },
+  "value_sources": {
+    "blueprint": {
+      "entity_id": "blueprint"
+    },
+    "bs-blue-paint": {
+      "entity_id": "bs-blue-paint"
+    },
+    "bs-gold-paint": {
+      "entity_id": "bs-gold-paint"
+    },
+    "bs-green-paint": {
+      "entity_id": "bs-green-paint"
+    },
+    "bs-neg-black-paint": {
+      "entity_id": "bs-neg-black-paint"
+    },
+    "bs-neg-cooldown": {
+      "entity_id": "bs-neg-cooldown"
+    },
+    "bs-neg-mult": {
+      "entity_id": "bs-neg-mult"
+    },
+    "bs-neg-range": {
+      "entity_id": "bs-neg-range"
+    },
+    "bs-purple-paint": {
+      "entity_id": "bs-purple-paint"
+    },
+    "bs-rainbow-paint": {
+      "entity_id": "bs-rainbow-paint"
+    },
+    "bs-red-paint": {
+      "entity_id": "bs-red-paint"
+    },
+    "bs-spectral-paint": {
+      "entity_id": "bs-spectral-paint"
+    },
+    "bs-stat-mod-activation-count": {
+      "entity_id": "bs-stat-mod-activation-count"
+    },
+    "bs-stat-mod-cooldown": {
+      "entity_id": "bs-stat-mod-cooldown"
+    },
+    "bs-stat-mod-mult": {
+      "entity_id": "bs-stat-mod-mult"
+    },
+    "bs-stat-mod-range": {
+      "entity_id": "bs-stat-mod-range"
+    },
+    "bs-white-paint": {
+      "entity_id": "bs-white-paint"
+    },
+    "favour-admiral": {
+      "entity_id": "favour-admiral"
+    },
+    "favour-antiquarian": {
+      "entity_id": "favour-antiquarian"
+    },
+    "favour-artist": {
+      "entity_id": "favour-artist"
+    },
+    "favour-druid": {
+      "entity_id": "favour-druid"
+    },
+    "favour-farmer": {
+      "entity_id": "favour-farmer"
+    },
+    "favour-fool": {
+      "entity_id": "favour-fool"
+    },
+    "favour-inventor": {
+      "entity_id": "favour-inventor"
+    },
+    "favour-merchant": {
+      "entity_id": "favour-merchant"
+    },
+    "favour-politician": {
+      "entity_id": "favour-politician"
+    },
+    "favour-ranger": {
+      "entity_id": "favour-ranger"
+    },
+    "favour-sensei": {
+      "entity_id": "favour-sensei"
+    },
+    "favour-spymaster": {
+      "entity_id": "favour-spymaster"
+    },
+    "favour-tycoon": {
+      "entity_id": "favour-tycoon"
+    },
+    "favour-witch": {
+      "entity_id": "favour-witch"
+    },
+    "favour-wizard": {
+      "entity_id": "favour-wizard"
+    },
+    "spell-create-random-building-supplies": {
+      "entity_id": "spell-create-random-building-supplies"
+    },
+    "spell-create-random-heirloom": {
+      "entity_id": "spell-create-random-heirloom"
+    },
+    "spell-create-random-votes": {
+      "entity_id": "spell-create-random-votes"
+    },
+    "spell-gain-blueprint": {
+      "entity_id": "spell-gain-blueprint"
+    },
+    "spell-gain-gold-sell-value": {
+      "entity_id": "spell-gain-gold-sell-value"
+    },
+    "spell-gain-heirloom-slot": {
+      "entity_id": "spell-gain-heirloom-slot"
+    },
+    "spell-move-building": {
+      "entity_id": "spell-move-building"
+    },
+    "spell-next-roll-is-rare": {
+      "entity_id": "spell-next-roll-is-rare"
+    },
+    "spell-place-anywhere": {
+      "entity_id": "spell-place-anywhere"
+    },
+    "spell-remove-building-gain-vote": {
+      "entity_id": "spell-remove-building-gain-vote"
+    },
+    "spell-transform-building-into-copy": {
+      "entity_id": "spell-transform-building-into-copy"
+    },
+    "spell-trigger": {
+      "entity_id": "spell-trigger"
+    }
+  },
+  "notes": [
+    "ConsumablesPool.GetRoll assigns every eligible tag weight 1f and removes each choice; it does not read ConsumableData.RollChance."
+  ]
+}

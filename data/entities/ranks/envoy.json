@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "envoy",
+  "kind": "rank",
+  "game_tag": {
+    "name": "None",
+    "value": 0
+  },
+  "display": {
+    "name": "Envoy",
+    "description": "Buildings can roll with [BsNegCooldown]",
+    "name_key": "Rank4EnvoyData.Name",
+    "description_key": "Rank4EnvoyData.Description"
+  },
+  "classification": {
+    "rank": {
+      "name": "Envoy",
+      "value": 4
+    }
+  },
+  "mechanics": {},
+  "relationships": [],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/ranks/envoy/icon.png",
+      "generated": false,
+      "width": 25,
+      "height": 25,
+      "rect": {
+        "x": 75,
+        "y": 25,
+        "width": 25,
+        "height": 25
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/ranks/envoy/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/ranks/envoy/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 436,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

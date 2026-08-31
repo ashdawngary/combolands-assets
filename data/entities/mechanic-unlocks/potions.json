@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "id": "potions",
+  "kind": "mechanic_unlock",
+  "game_tag": {
+    "name": "None",
+    "value": 0
+  },
+  "display": {
+    "name": "SpellsUnlockData",
+    "description": "[Potion] can now appear in the shop or in packs @These [Consumable] are used as once-off utilities with a variety of effects",
+    "name_key": null,
+    "description_key": "SpellsUnlockData.Description"
+  },
+  "classification": {
+    "mechanic_unlock": {
+      "name": "Potions",
+      "value": 5
+    }
+  },
+  "mechanics": {},
+  "relationships": [],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/mechanic-unlocks/potions/icon.png",
+      "generated": false,
+      "width": 41,
+      "height": 50,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 41,
+        "height": 50
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.50042945
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/mechanic-unlocks/potions/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/mechanic-unlocks/potions/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 508,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": [
+    "Localized name is unavailable; the displayed fallback name is used."
+  ]
+}

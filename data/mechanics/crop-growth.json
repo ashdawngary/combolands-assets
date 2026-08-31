@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "id": "crop-growth",
+  "kind": "transformation_cycle",
+  "cooldowns": {
+    "apple-orchard": 3,
+    "apple-orchard-empty": 3,
+    "berry-bush": 4,
+    "berry-bush-empty": 4,
+    "cotton-field": 3,
+    "cotton-field-empty": 3,
+    "sunflower-farm": 3,
+    "sunflower-farm-empty": 3,
+    "vineyard": 3,
+    "vineyard-empty": 3,
+    "wheat-field": 3,
+    "wheat-field-empty": 3
+  },
+  "irrigated_cooldowns": {
+    "apple-orchard": 1,
+    "apple-orchard-empty": 1,
+    "berry-bush": 1,
+    "berry-bush-empty": 1,
+    "cotton-field": 1,
+    "cotton-field-empty": 1,
+    "sunflower-farm": 1,
+    "sunflower-farm-empty": 1,
+    "vineyard": 1,
+    "vineyard-empty": 1,
+    "wheat-field": 1,
+    "wheat-field-empty": 1
+  },
+  "transforms": {
+    "apple-orchard-empty": [
+      "apple-orchard"
+    ],
+    "berry-bush-empty": [
+      "berry-bush"
+    ],
+    "cotton-field-empty": [
+      "cotton-field"
+    ],
+    "sunflower-farm-empty": [
+      "sunflower-farm"
+    ],
+    "vineyard-empty": [
+      "vineyard"
+    ],
+    "wheat-field-empty": [
+      "wheat-field"
+    ]
+  },
+  "notes": []
+}

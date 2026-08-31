@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "id": "roll-pool-eligibility",
+  "kind": "conditional",
+  "formula": {
+    "operator": "conditional",
+    "condition": "building_draft_group",
+    "branches": [
+      "starting",
+      "secondary",
+      "advanced",
+      "neutral",
+      "guild_default"
+    ]
+  },
+  "notes": [
+    "Each branch delegates to the corresponding exact managed eligibility member."
+  ],
+  "roll_pipeline": [
+    "refresh_currently_draftable",
+    "exclude_ignored_and_dismissed",
+    "apply_optional_rarity_guarantee",
+    "add_by_building_roll_chance",
+    "choose_then_remove_until_count"
+  ],
+  "selection_formula": {
+    "operator": "weighted_choice",
+    "choices": "eligible_buildings_weighted_by_roll_chance"
+  },
+  "replacement": false
+}

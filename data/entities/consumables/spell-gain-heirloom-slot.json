@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "spell-gain-heirloom-slot",
+  "kind": "consumable",
+  "game_tag": {
+    "name": "SpellGainHeirloomSlot",
+    "value": 903
+  },
+  "display": {
+    "name": "Negative Space",
+    "description": "+1 [Heirloom] slot (up to a max of 10 total)",
+    "name_key": "GainHeirloomSlot.Name",
+    "description_key": "GainHeirloomSlot.Description"
+  },
+  "classification": {
+    "item_type": {
+      "name": "Potion",
+      "value": 5
+    }
+  },
+  "mechanics": {},
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "consumable-roll-multipliers"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/consumables/spell-gain-heirloom-slot/icon.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 66,
+        "y": 58,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/consumables/spell-gain-heirloom-slot/card-preview.png",
+      "generated": true,
+      "width": 120,
+      "height": 136,
+      "style": {
+        "item_type": "potion",
+        "frame_source": "ShopItemSpell/ShopBGSpell"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/consumables/spell-gain-heirloom-slot/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 500,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

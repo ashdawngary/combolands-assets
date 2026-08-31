@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "id": "drop-choice-order",
+  "kind": "ordered_selection",
+  "managed_entry_point": "GameState.Packs.PackData.Init",
+  "configuration_precedence": [
+    "pack_type_generated_category",
+    "specific_categories_override_generated_category",
+    "specific_rarities_assigned_last"
+  ],
+  "blueprint_roll_precedence": [
+    "category_guarantee",
+    "rarity_guarantee",
+    "unrestricted_building_roll"
+  ],
+  "notes": [
+    "Conditional branches not expressible by the formula AST are not presented as exact formulas."
+  ]
+}

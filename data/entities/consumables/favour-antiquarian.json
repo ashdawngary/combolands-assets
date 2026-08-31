@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "id": "favour-antiquarian",
+  "kind": "consumable",
+  "game_tag": {
+    "name": "FavourAntiquarian",
+    "value": 814
+  },
+  "display": {
+    "name": "Antiquarian Vote",
+    "description": "Add a [CouncilVote] for the [Antiquarian]",
+    "name_key": "FavourAntiquarian.Name",
+    "description_key": "FavourAntiquarian.Description"
+  },
+  "classification": {
+    "item_type": {
+      "name": "CouncilVote",
+      "value": 4
+    }
+  },
+  "mechanics": {},
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "consumable-roll-multipliers"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/consumables/favour-antiquarian/icon.png",
+      "generated": false,
+      "width": 32,
+      "height": 32,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/consumables/favour-antiquarian/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/consumables/favour-antiquarian/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 500,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

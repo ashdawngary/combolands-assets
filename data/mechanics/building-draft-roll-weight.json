@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "id": "building-draft-roll-weight",
+  "kind": "formula",
+  "factors": [
+    "base_rarity_weight",
+    "milestone_multiplier",
+    "behaviour_roll_chance_multiplier",
+    "clover_monument_multiplier",
+    "old_blueprint_multiplier",
+    "recent_unlock_multiplier"
+  ],
+  "recent_unlock_multipliers": {
+    "common": 2,
+    "uncommon": 3,
+    "rare": 5,
+    "masterwork": 8
+  },
+  "formula": {
+    "operator": "multiply",
+    "factors": [
+      {
+        "operator": "lookup",
+        "input": "rarity",
+        "mechanic_id": "building-draft-rarity-weights"
+      },
+      {
+        "operator": "lookup",
+        "input": "rarity_and_clamped_city_size_minus_one",
+        "mechanic_id": "rarity-milestone-multipliers"
+      },
+      {
+        "operator": "lookup",
+        "input": "behaviour_roll_chance_multiplier"
+      },
+      {
+        "operator": "conditional",
+        "condition": "clover_equipped_and_building_is_monument",
+        "if_true": {
+          "operator": "multiply",
+          "factors": [
+            {
+              "operator": "constant",
+              "value": 3
+            },
+            {
+              "operator": "lookup",
+              "input": "equipped_clover_count"
+            }
+          ]
+        },
+        "if_false": {
+          "operator": "constant",
+          "value": 1
+        }
+      },
+      {
+        "operator": "conditional",
+        "condition": "old_blueprint_equipped_and_blueprint_for_tag_in_consumable_slot",
+        "if_true": {
+          "operator": "multiply",
+          "factors": [
+            {
+              "operator": "add",
+              "terms": [
+                {
+                  "operator": "lookup",
+                  "input": "old_blueprint_activation_chance"
+                },
+                {
+                  "operator": "constant",
+                  "value": 1
+                }
+              ]
+            },
+            {
+              "operator": "lookup",
+              "input": "equipped_old_blueprint_count"
+            }
+          ]
+        },
+        "if_false": {
+          "operator": "constant",
+          "value": 1
+        }
+      },
+      {
+        "operator": "conditional",
+        "condition": "tag_was_unlocked_last_run",
+        "if_true": {
+          "operator": "lookup",
+          "input": "rarity",
+          "values": {
+            "common": {
+              "operator": "constant",
+              "value": 2
+            },
+            "uncommon": {
+              "operator": "constant",
+              "value": 3
+            },
+            "rare": {
+              "operator": "constant",
+              "value": 5
+            },
+            "masterwork": {
+              "operator": "constant",
+              "value": 8
+            }
+          }
+        },
+        "if_false": {
+          "operator": "constant",
+          "value": 1
+        }
+      }
+    ]
+  },
+  "notes": []
+}

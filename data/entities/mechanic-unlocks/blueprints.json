@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "id": "blueprints",
+  "kind": "mechanic_unlock",
+  "game_tag": {
+    "name": "None",
+    "value": 0
+  },
+  "display": {
+    "name": "BlueprintsUnlockData",
+    "description": null,
+    "name_key": null,
+    "description_key": null
+  },
+  "classification": {
+    "mechanic_unlock": {
+      "name": "Blueprints",
+      "value": 6
+    }
+  },
+  "mechanics": {},
+  "relationships": [],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/mechanic-unlocks/blueprints/icon.png",
+      "generated": false,
+      "width": 49,
+      "height": 40,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 49,
+        "height": 40
+      },
+      "pivot": {
+        "x": 0.50077796,
+        "y": 0.5503681
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/mechanic-unlocks/blueprints/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/mechanic-unlocks/blueprints/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 436,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": [
+    "Localized name is unavailable; the displayed fallback name is used.",
+    "Localized description is unavailable."
+  ]
+}

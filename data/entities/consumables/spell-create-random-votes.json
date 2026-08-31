@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "spell-create-random-votes",
+  "kind": "consumable",
+  "game_tag": {
+    "name": "SpellCreateRandomVotes",
+    "value": 909
+  },
+  "display": {
+    "name": "Bribe in a Bottle",
+    "description": "Gain up to 2 random [CouncilVote] (must have space)",
+    "name_key": "AddRandomVotes.Name",
+    "description_key": "AddRandomVotes.Description"
+  },
+  "classification": {
+    "item_type": {
+      "name": "Potion",
+      "value": 5
+    }
+  },
+  "mechanics": {},
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "consumable-roll-multipliers"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/consumables/spell-create-random-votes/icon.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 44,
+        "y": 58,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/consumables/spell-create-random-votes/card-preview.png",
+      "generated": true,
+      "width": 120,
+      "height": 136,
+      "style": {
+        "item_type": "potion",
+        "frame_source": "ShopItemSpell/ShopBGSpell"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/consumables/spell-create-random-votes/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 500,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "ranger",
+  "kind": "councillor",
+  "game_tag": {
+    "name": "FavourRanger",
+    "value": 806
+  },
+  "display": {
+    "name": "Ranger",
+    "description": "The solitary [Ranger] joins the council. She has returned from the wilds to oversee [Husbandry] and [Fishing]",
+    "name_key": "CharacterData.Ranger.Name",
+    "description_key": "CharacterRangerData.Description"
+  },
+  "classification": {
+    "councillor": {
+      "name": "Ranger",
+      "value": 5
+    }
+  },
+  "mechanics": {},
+  "relationships": [],
+  "assets": [
+    {
+      "role": "portrait",
+      "path": "assets/councillors/ranger/portrait.png",
+      "generated": false,
+      "width": 31,
+      "height": 50,
+      "rect": {
+        "x": 97,
+        "y": 104,
+        "width": 31,
+        "height": 50
+      },
+      "pivot": {
+        "x": 0.48260057,
+        "y": 0.5207929
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/councillors/ranger/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/councillors/ranger/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 468,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

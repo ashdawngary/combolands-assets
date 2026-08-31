@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "id": "trigger-execution-priority",
+  "kind": "ordering",
+  "queue_discipline": "last_in_first_out",
+  "building_enqueue_order": [
+    "built_this_turn_descending",
+    "end_of_turn_priority_descending",
+    "random_tiebreaker"
+  ],
+  "effective_group_execution_order": [
+    "heirlooms",
+    "buildings"
+  ],
+  "effective_building_execution_order": [
+    "not_built_this_turn_first",
+    "end_of_turn_priority_ascending",
+    "random_tiebreaker"
+  ],
+  "effective_heirloom_execution_order": [
+    "end_of_turn_priority_descending"
+  ],
+  "effective_execution_note": "The stack reverses enqueue order; equal-priority ordering is randomized.",
+  "notes": []
+}

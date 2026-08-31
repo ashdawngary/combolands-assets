@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "id": "harvesting",
+  "kind": "activation",
+  "actors": [
+    "berry-picker",
+    "granary",
+    "harvester"
+  ],
+  "actor_rules": {
+    "berry-picker": {
+      "targets": "berry_bush_in_range",
+      "effect": "transform_to_berry_bush_empty"
+    },
+    "granary": {
+      "targets": "crop_in_range",
+      "effect": "transform_to_alternate_placed_type_when_present"
+    },
+    "harvester": {
+      "targets": "eligible_adjacent_activatable_buildings",
+      "selection": "random_without_replacement",
+      "crop_filter": false
+    }
+  },
+  "notes": []
+}

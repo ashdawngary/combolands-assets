@@ -1,0 +1,398 @@
+{
+  "schema_version": "1.0.0",
+  "id": "university",
+  "kind": "building",
+  "game_tag": {
+    "name": "University",
+    "value": 219
+  },
+  "display": {
+    "name": "Academy",
+    "description": "{Triggers every [Cooldown] weeks:} @[CategoryScoreTraining] for each [Training] or [Healing] [InRange]",
+    "name_key": "University.Name",
+    "description_key": "University.Description"
+  },
+  "classification": {
+    "categories": [
+      "martial",
+      "healing",
+      "residence"
+    ],
+    "rarity": "common",
+    "draft_group": "default"
+  },
+  "mechanics": {
+    "categories": [
+      "martial",
+      "healing",
+      "residence"
+    ],
+    "can_be_placed_on": [
+      "grass"
+    ],
+    "target_categories": [
+      "training",
+      "healing"
+    ],
+    "valid_triggers": [
+      "on-build",
+      "on-activate",
+      "on-end-of-turn"
+    ],
+    "rarity": "common",
+    "range": 4,
+    "cooldown": 5,
+    "behavior_tag": "university",
+    "target_tags": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "activation_chance": 1,
+    "buy_price": 77,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "in-range",
+    "placement_count": 1,
+    "range_placement_restriction": true,
+    "can_be_activated": true,
+    "times_can_trigger_per_week": 10,
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "targets_category",
+      "target_category": "training"
+    },
+    {
+      "type": "targets_category",
+      "target_category": "healing"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "adjacency-and-range"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "building-draft-rarity-weights"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "rarity-milestone-multipliers"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "building-draft-roll-weight"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "ground",
+      "path": "assets/buildings/university/ground.png",
+      "generated": false,
+      "width": 13,
+      "height": 26,
+      "rect": {
+        "x": 77,
+        "y": 98,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "icon",
+      "path": "assets/buildings/university/icon.png",
+      "generated": true,
+      "width": 11,
+      "height": 11,
+      "runtime_rect": {
+        "x": 78,
+        "y": 102,
+        "width": 11,
+        "height": 11
+      },
+      "icon_offset": {
+        "x": 0,
+        "y": 3
+      },
+      "corrupted": false,
+      "rect": {
+        "x": 77,
+        "y": 98,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "context_render",
+      "path": "assets/buildings/university/context-grass.png",
+      "generated": true,
+      "width": 52,
+      "height": 104,
+      "terrain": "grass",
+      "terrain_variant_index": 7,
+      "terrain_context": "homogeneous",
+      "map_coordinate": [
+        0,
+        0
+      ],
+      "nature_offset_px": [
+        0,
+        0
+      ],
+      "theme": "normal",
+      "global_light": "neutral_white",
+      "scale": 4,
+      "pixels_per_unit": 12,
+      "rect": {
+        "x": 77,
+        "y": 98,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "terrain_rect": {
+        "x": 132,
+        "y": 246,
+        "width": 12,
+        "height": 12
+      },
+      "terrain_pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/university/ground-paint-red.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "red",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        231,
+        8,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 77,
+        "y": 98,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/university/ground-paint-gold.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "gold",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        212,
+        151,
+        0,
+        255
+      ],
+      "rect": {
+        "x": 77,
+        "y": 98,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/university/ground-paint-green.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "green",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        164,
+        7,
+        255
+      ],
+      "rect": {
+        "x": 77,
+        "y": 98,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/university/ground-paint-blue.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "blue",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        0,
+        180,
+        255,
+        255
+      ],
+      "rect": {
+        "x": 77,
+        "y": 98,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/university/ground-paint-white.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "white",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        229,
+        229,
+        229,
+        255
+      ],
+      "rect": {
+        "x": 77,
+        "y": 98,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/university/ground-paint-purple.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "purple",
+      "paint_effect": "inner_outline",
+      "paint_color": [
+        202,
+        0,
+        189,
+        255
+      ],
+      "rect": {
+        "x": 77,
+        "y": 98,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/university/ground-paint-dark.png",
+      "generated": true,
+      "width": 13,
+      "height": 26,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 77,
+        "y": 98,
+        "width": 13,
+        "height": 26
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/buildings/university/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": "martial",
+        "rarity": null,
+        "background_rgba": [
+          136,
+          71,
+          71,
+          255
+        ],
+        "label_rgba": [
+          97,
+          0,
+          0,
+          255
+        ],
+        "border_rgba": [
+          117,
+          36,
+          56,
+          255
+        ],
+        "frame_source": "BuildingButton.prefab/Panel3/rarity border"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/buildings/university/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 484,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

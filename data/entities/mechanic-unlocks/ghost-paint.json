@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "id": "ghost-paint",
+  "kind": "mechanic_unlock",
+  "game_tag": {
+    "name": "None",
+    "value": 0
+  },
+  "display": {
+    "name": "GhostPaintUnlockData",
+    "description": "Permanently modify target building's affected category to one of your choice [BREAK]You may only select a new category that already exists on the map [BREAK]Buildings can only have 1 paint at a time",
+    "name_key": null,
+    "description_key": "SpectralPaint.Description"
+  },
+  "classification": {
+    "mechanic_unlock": {
+      "name": "GhostPaint",
+      "value": 12
+    }
+  },
+  "mechanics": {},
+  "relationships": [],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/mechanic-unlocks/ghost-paint/icon.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 110,
+        "y": 80,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/mechanic-unlocks/ghost-paint/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/mechanic-unlocks/ghost-paint/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 604,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": [
+    "Localized name is unavailable; the displayed fallback name is used."
+  ]
+}

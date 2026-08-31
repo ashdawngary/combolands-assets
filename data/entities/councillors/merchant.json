@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "merchant",
+  "kind": "councillor",
+  "game_tag": {
+    "name": "FavourMerchant",
+    "value": 805
+  },
+  "display": {
+    "name": "Merchant",
+    "description": "The shrewd [Merchant] joins the council. His avaricious schemes focus on [Trader] and generating [Gold]",
+    "name_key": "CharacterData.Merchant.Name",
+    "description_key": "CharacterMerchantData.Description"
+  },
+  "classification": {
+    "councillor": {
+      "name": "Merchant",
+      "value": 4
+    }
+  },
+  "mechanics": {},
+  "relationships": [],
+  "assets": [
+    {
+      "role": "portrait",
+      "path": "assets/councillors/merchant/portrait.png",
+      "generated": false,
+      "width": 32,
+      "height": 50,
+      "rect": {
+        "x": 128,
+        "y": 104,
+        "width": 32,
+        "height": 50
+      },
+      "pivot": {
+        "x": 0.49999982,
+        "y": 0.5205342
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/councillors/merchant/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/councillors/merchant/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 436,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

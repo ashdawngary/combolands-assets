@@ -1,0 +1,410 @@
+{
+  "schema_version": "1.0.0",
+  "id": "berry-bush-empty",
+  "kind": "building",
+  "game_tag": {
+    "name": "BerryBushEmpty",
+    "value": 5
+  },
+  "display": {
+    "name": "Empty Bush",
+    "description": "{Grows} (transforms) after [Cooldown] weeks",
+    "name_key": "BerryBushEmpty.Name",
+    "description_key": "BerryBushEmpty.Description"
+  },
+  "classification": {
+    "categories": [
+      "none",
+      "nature",
+      "crop"
+    ],
+    "rarity": "none",
+    "draft_group": "default"
+  },
+  "mechanics": {
+    "categories": [
+      "none",
+      "nature",
+      "crop"
+    ],
+    "can_be_placed_on": [
+      "grass"
+    ],
+    "valid_triggers": [
+      "on-end-of-turn"
+    ],
+    "cooldown": 4,
+    "can_be_activated": false,
+    "behavior_tag": "berry-bush-empty",
+    "target_tags": [],
+    "target_categories": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "activation_chance": 1,
+    "buy_price": 77,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "none",
+    "placement_count": 1,
+    "range_placement_restriction": true,
+    "times_can_trigger_per_week": 10,
+    "irrigated_cooldown": 1,
+    "end_of_turn_execution_priority": 2,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "transforms_into",
+      "target_id": "berry-bush"
+    },
+    {
+      "type": "affected_by_category",
+      "target_category": "irrigator"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "crop-growth"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "ground",
+      "path": "assets/buildings/berry-bush-empty/ground.png",
+      "generated": false,
+      "width": 12,
+      "height": 12,
+      "rect": {
+        "x": 300,
+        "y": 114,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "icon",
+      "path": "assets/buildings/berry-bush-empty/icon.png",
+      "generated": true,
+      "width": 11,
+      "height": 11,
+      "runtime_rect": {
+        "x": 301,
+        "y": 115,
+        "width": 11,
+        "height": 11
+      },
+      "icon_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "corrupted": false,
+      "rect": {
+        "x": 300,
+        "y": 114,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "ground_variant",
+      "path": "assets/buildings/berry-bush-empty/ground-variant-000.png",
+      "generated": false,
+      "width": 12,
+      "height": 12,
+      "rect": {
+        "x": 300,
+        "y": 114,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "index": 0
+    },
+    {
+      "role": "ground_variant",
+      "path": "assets/buildings/berry-bush-empty/ground-variant-001.png",
+      "generated": false,
+      "width": 12,
+      "height": 12,
+      "rect": {
+        "x": 312,
+        "y": 114,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "index": 1
+    },
+    {
+      "role": "ground_variant",
+      "path": "assets/buildings/berry-bush-empty/ground-variant-002.png",
+      "generated": false,
+      "width": 12,
+      "height": 12,
+      "rect": {
+        "x": 324,
+        "y": 114,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "index": 2
+    },
+    {
+      "role": "ground_variant",
+      "path": "assets/buildings/berry-bush-empty/ground-variant-003.png",
+      "generated": false,
+      "width": 12,
+      "height": 12,
+      "rect": {
+        "x": 336,
+        "y": 114,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "index": 3
+    },
+    {
+      "role": "context_render",
+      "path": "assets/buildings/berry-bush-empty/context-grass.png",
+      "generated": true,
+      "width": 48,
+      "height": 48,
+      "terrain": "grass",
+      "terrain_variant_index": 7,
+      "terrain_context": "homogeneous",
+      "map_coordinate": [
+        0,
+        0
+      ],
+      "nature_offset_px": [
+        0,
+        0
+      ],
+      "theme": "normal",
+      "global_light": "neutral_white",
+      "scale": 4,
+      "pixels_per_unit": 12,
+      "rect": {
+        "x": 300,
+        "y": 114,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "terrain_rect": {
+        "x": 132,
+        "y": 246,
+        "width": 12,
+        "height": 12
+      },
+      "terrain_pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/berry-bush-empty/ground-paint-dark.png",
+      "generated": true,
+      "width": 12,
+      "height": 12,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 300,
+        "y": 114,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/berry-bush-empty/ground-variant-000-paint-dark.png",
+      "generated": true,
+      "width": 12,
+      "height": 12,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 300,
+        "y": 114,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "index": 0,
+      "variant_index": 0
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/berry-bush-empty/ground-variant-001-paint-dark.png",
+      "generated": true,
+      "width": 12,
+      "height": 12,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 312,
+        "y": 114,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "index": 1,
+      "variant_index": 1
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/berry-bush-empty/ground-variant-002-paint-dark.png",
+      "generated": true,
+      "width": 12,
+      "height": 12,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 324,
+        "y": 114,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "index": 2,
+      "variant_index": 2
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/berry-bush-empty/ground-variant-003-paint-dark.png",
+      "generated": true,
+      "width": 12,
+      "height": 12,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 336,
+        "y": 114,
+        "width": 12,
+        "height": 12
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "index": 3,
+      "variant_index": 3
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/buildings/berry-bush-empty/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ],
+        "frame_source": "BuildingButton.prefab/Panel3/rarity border"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/buildings/berry-bush-empty/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 484,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

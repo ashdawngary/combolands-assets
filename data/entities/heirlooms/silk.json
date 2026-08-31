@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "id": "silk",
+  "kind": "heirloom",
+  "game_tag": {
+    "name": "Silk",
+    "value": 615
+  },
+  "display": {
+    "name": "Bolt of Silk",
+    "description": "When a [Marketplace] triggers, it targets all [Stall] on the map which are [Adjacent] to any [Marketplace]",
+    "name_key": "Silk.Name",
+    "description_key": "Silk.Description"
+  },
+  "classification": {
+    "categories": [
+      "heirloom"
+    ],
+    "rarity": "rare"
+  },
+  "mechanics": {
+    "categories": [
+      "heirloom"
+    ],
+    "rarity": "rare",
+    "buy_price": 10,
+    "behavior_tag": "silk",
+    "target_tags": [],
+    "target_categories": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "valid_triggers": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "activation_chance": 1,
+    "cooldown": -1,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "none",
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/heirlooms/silk/icon.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 198,
+        "y": 212,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/heirlooms/silk/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": "commercial",
+        "rarity": null,
+        "background_rgba": [
+          207,
+          186,
+          138,
+          255
+        ],
+        "label_rgba": [
+          204,
+          147,
+          18,
+          255
+        ],
+        "border_rgba": [
+          174,
+          106,
+          34,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/heirlooms/silk/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 468,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

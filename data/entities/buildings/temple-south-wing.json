@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0.0",
+  "id": "temple-south-wing",
+  "kind": "building",
+  "game_tag": {
+    "name": "TempleSouthWing",
+    "value": 263
+  },
+  "display": {
+    "name": "Temple South-East Wing",
+    "description": "When all 4 wings of the temple are created [Adjacent] in the correct positions, gain a special [Legendary] [Heirloom] [BREAK]Cannot be removed",
+    "name_key": "TempleSouthWing.Name",
+    "description_key": "Temple.Description"
+  },
+  "classification": {
+    "categories": [
+      "civic",
+      "monument",
+      "sacred"
+    ],
+    "rarity": "rare",
+    "draft_group": "default"
+  },
+  "mechanics": {
+    "categories": [
+      "civic",
+      "monument",
+      "sacred"
+    ],
+    "can_be_placed_on": [
+      "grass"
+    ],
+    "valid_triggers": [
+      "on-build"
+    ],
+    "rarity": "rare",
+    "can_be_activated": false,
+    "behavior_tag": "temple-south-wing",
+    "target_tags": [],
+    "target_categories": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "activation_chance": 1,
+    "buy_price": 77,
+    "cooldown": -1,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "none",
+    "placement_count": 1,
+    "range_placement_restriction": true,
+    "times_can_trigger_per_week": 10,
+    "wing_tag": "temple-south-wing",
+    "required_tag": "temple-west-wing",
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "partial"
+  },
+  "relationships": [
+    {
+      "type": "requires_entity",
+      "target_id": "temple-west-wing"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "building-draft-rarity-weights"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "rarity-milestone-multipliers"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "building-draft-roll-weight"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "ground",
+      "path": "assets/buildings/temple-south-wing/ground.png",
+      "generated": false,
+      "width": 12,
+      "height": 24,
+      "rect": {
+        "x": 360,
+        "y": 20,
+        "width": 12,
+        "height": 24
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "icon",
+      "path": "assets/buildings/temple-south-wing/icon.png",
+      "generated": true,
+      "width": 11,
+      "height": 11,
+      "runtime_rect": {
+        "x": 360,
+        "y": 21,
+        "width": 11,
+        "height": 11
+      },
+      "icon_offset": {
+        "x": -1,
+        "y": 0
+      },
+      "corrupted": false,
+      "rect": {
+        "x": 360,
+        "y": 20,
+        "width": 12,
+        "height": 24
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "context_render",
+      "path": "assets/buildings/temple-south-wing/context-grass.png",
+      "generated": true,
+      "width": 48,
+      "height": 96,
+      "terrain": "grass",
+      "terrain_variant_index": 7,
+      "terrain_context": "homogeneous",
+      "map_coordinate": [
+        0,
+        0
+      ],
+      "nature_offset_px": [
+        0,
+        0
+      ],
+      "theme": "normal",
+      "global_light": "neutral_white",
+      "scale": 4,
+      "pixels_per_unit": 12,
+      "rect": {
+        "x": 360,
+        "y": 20,
+        "width": 12,
+        "height": 24
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      },
+      "terrain_rect": {
+        "x": 132,
+        "y": 246,
+        "width": 12,
+        "height": 12
+      },
+      "terrain_pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "painted_ground",
+      "path": "assets/buildings/temple-south-wing/ground-paint-dark.png",
+      "generated": true,
+      "width": 12,
+      "height": 24,
+      "paint": "dark",
+      "paint_effect": "greyscale",
+      "paint_color": [
+        46,
+        46,
+        46,
+        255
+      ],
+      "rect": {
+        "x": 360,
+        "y": 20,
+        "width": 12,
+        "height": 24
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/buildings/temple-south-wing/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": "civic",
+        "rarity": null,
+        "background_rgba": [
+          143,
+          179,
+          217,
+          255
+        ],
+        "label_rgba": [
+          11,
+          79,
+          152,
+          255
+        ],
+        "border_rgba": [
+          37,
+          58,
+          94,
+          255
+        ],
+        "frame_source": "BuildingButton.prefab/Panel3/rarity border"
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/buildings/temple-south-wing/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 564,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

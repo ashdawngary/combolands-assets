@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0.0",
+  "id": "architectural-codes",
+  "kind": "heirloom",
+  "game_tag": {
+    "name": "ArchitecturalCodes",
+    "value": 526
+  },
+  "display": {
+    "name": "Building Codes",
+    "description": "The next [Cooldown] [Civic] buildings have no [Range] placement restrictions",
+    "name_key": "ArchitecturalCodes.Name",
+    "description_key": "ArchitecturalCodes.Description"
+  },
+  "classification": {
+    "categories": [
+      "heirloom"
+    ],
+    "rarity": "common"
+  },
+  "mechanics": {
+    "categories": [
+      "heirloom"
+    ],
+    "valid_triggers": [
+      "building-construction-occurred"
+    ],
+    "rarity": "common",
+    "cooldown": 5,
+    "buy_price": 5,
+    "behavior_tag": "architectural-codes",
+    "target_tags": [],
+    "target_categories": [],
+    "target_tile_types": [],
+    "target_rarities": [],
+    "behavior_multiplier": 1,
+    "activation_count": 0,
+    "activation_chance": 1,
+    "roll_chance_multiplier": 1,
+    "score_preview_mode": "none",
+    "target_category": "civic",
+    "end_of_turn_execution_priority": 10,
+    "mechanics_coverage": "exact"
+  },
+  "relationships": [
+    {
+      "type": "allows_build_inside_category_range",
+      "target_category": "civic"
+    },
+    {
+      "type": "affected_by_mechanic",
+      "target_mechanic_id": "trigger-execution-priority"
+    }
+  ],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/heirlooms/architectural-codes/icon.png",
+      "generated": false,
+      "width": 11,
+      "height": 11,
+      "rect": {
+        "x": 66,
+        "y": 223,
+        "width": 11,
+        "height": 11
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/heirlooms/architectural-codes/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/heirlooms/architectural-codes/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 436,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

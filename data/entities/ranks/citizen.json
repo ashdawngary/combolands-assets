@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "citizen",
+  "kind": "rank",
+  "game_tag": {
+    "name": "None",
+    "value": 0
+  },
+  "display": {
+    "name": "Citizen",
+    "description": "A [Hazard] will spawn in Quaint Village",
+    "name_key": "Rank3CitizenData.Name",
+    "description_key": "Rank3CitizenData.Description"
+  },
+  "classification": {
+    "rank": {
+      "name": "Citizen",
+      "value": 3
+    }
+  },
+  "mechanics": {},
+  "relationships": [],
+  "assets": [
+    {
+      "role": "icon",
+      "path": "assets/ranks/citizen/icon.png",
+      "generated": false,
+      "width": 25,
+      "height": 25,
+      "rect": {
+        "x": 50,
+        "y": 25,
+        "width": 25,
+        "height": 25
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "role": "card_preview",
+      "path": "assets/ranks/citizen/card-preview.png",
+      "generated": true,
+      "width": 128,
+      "height": 128,
+      "style": {
+        "category": null,
+        "rarity": null,
+        "background_rgba": [
+          166,
+          188,
+          202,
+          255
+        ],
+        "label_rgba": [
+          50,
+          102,
+          153,
+          255
+        ],
+        "border_rgba": [
+          58,
+          70,
+          86,
+          255
+        ]
+      },
+      "font_family": "Ignore 17"
+    },
+    {
+      "role": "info_card",
+      "path": "assets/ranks/citizen/info-card.png",
+      "generated": true,
+      "width": 472,
+      "height": 436,
+      "render_scale": 4,
+      "runtime_values": "catalog_static_reconstruction",
+      "font_family": "Ignore 17"
+    }
+  ],
+  "notes": []
+}

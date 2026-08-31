@@ -448,6 +448,9 @@ Buildings are grouped by their primary category. Neutral also includes records w
   </tbody>
 </table>
 
+### Arcane
+
+<table>
   <tbody>
     <tr>
       <td align="center" width="16.66%">
